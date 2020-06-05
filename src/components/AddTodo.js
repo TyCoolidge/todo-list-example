@@ -8,7 +8,7 @@ export class AddTodo extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    this.props.addTodo(this.state.name);
+    this.props.addTodo(this.state.title);
     this.setState({ title: " " });
   };
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -19,9 +19,9 @@ export class AddTodo extends Component {
         <input
           type="text"
           name="title"
-          style={{ flex: "10", padding: "5px" }}
-          value={this.state.name}
           placeholder="Add Todo ..."
+          style={{ flex: "10", padding: "5px" }}
+          value={this.state.title}
           onChange={this.onChange}
         />
 
