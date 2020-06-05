@@ -70,3 +70,7 @@ class App extends Component {
   }
 }
 export default App;
+
+//things to add
+// Save
+// time and date
